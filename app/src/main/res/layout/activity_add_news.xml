@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".addNewsActivity">
+
+
+    <ImageView
+        android:id="@+id/bannerID"
+        android:layout_width="400sp"
+        android:layout_height="120sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/banner" />
+
+    <EditText
+        android:id="@+id/articleName"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:hint="Enter Article name"
+        android:inputType="textPersonName"
+        android:padding="13sp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerID" />
+
+    <EditText
+        android:id="@+id/articlePrice"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:hint="Article price"
+        android:inputType="textPersonName"
+        android:padding="13sp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleName" />
+
+    <EditText
+        android:id="@+id/imagePath"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:hint="Add image path"
+        android:inputType="textPersonName"
+        android:padding="13sp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articlePrice" />
+
+    <EditText
+        android:id="@+id/descriptionArticle"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:padding="70sp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/addArticleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePath"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addArticleButton"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:text="Add article"
+        android:textAllCaps="false"
+        android:textColor="#00343A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePath"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <TextView
+        android:id="@+id/backTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addArticleButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
