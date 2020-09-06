@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/usernameInputLogin"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+        android:ems="10"
+        android:hint="Enter your username"
+        android:inputType="textPersonName"
+        android:padding="13sp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerID" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:padding="13sp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInputLogin"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <ImageView
+        android:id="@+id/bannerID"
+        android:layout_width="400sp"
+        android:layout_height="250sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
+        app:srcCompat="@drawable/banner" />
+
+    <Button
+        android:id="@+id/LoginButtonID"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_design"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#00343A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+    <Button
+        android:id="@+id/RegisterButtonID"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_design"
+        android:text="Join Us"
+        android:textAllCaps="false"
+        android:textColor="#00343A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/LoginButtonID" />
+
+    <TextView
+        android:id="@+id/imAdminText"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="I'm an Admin?"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButtonID"
+        app:layout_constraintVertical_bias="0.235" />
+
+
+    <TextView
+        android:id="@+id/imNotAdminText"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="I'm not Admin?"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imAdminText"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButtonID"
+        app:layout_constraintVertical_bias="0.238" />
+</androidx.constraintlayout.widget.ConstraintLayout>
