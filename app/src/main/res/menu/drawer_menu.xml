@@ -10,7 +10,7 @@
         <item
             android:id="@+id/addNews"
             android:icon="@drawable/ic_baseline_add_24"
-            android:title="Add article" />
+            android:title="Podeli novost" />
         <item
             android:id="@+id/logout"
             android:icon="@drawable/ic_baseline_keyboard_tab_24"
